@@ -1,4 +1,11 @@
 import Link from "next/link";
+
+export const metadata = {
+    title: "store",
+    description: "paginas de tienda",
+    keywords: "store, tienda, categorias",
+};
+
 function TiendaLayout({ children }) {
     return (
         <>
