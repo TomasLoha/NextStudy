@@ -14,6 +14,9 @@ function Navbar() {
                 <li>
                     <Link href="http:/tienda">Tienda</Link>
                 </li>
+                <li>
+                    <Link href="http:/post">Post</Link>
+                </li>
             </ul>
         </nav>
     );
