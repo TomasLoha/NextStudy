@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import { Roboto } from "next/font/google";
-import "./global.css";
+import "./globals.css";
 //el SEO (conjunto de metadatos que ayudan a los bucadores a indexar y clasificar contenido)
 // solo es necesario cuando deseamos que suceda y no sea personal o privado
 export const metadata = {

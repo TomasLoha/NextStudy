@@ -2,11 +2,11 @@ import Link from "next/link";
 import "./navbar.css";
 function Navbar() {
     return (
-        <nav className="navbar">
+        <nav className="navbar py-10">
             <Link href="/">
-                <h1>Navbar</h1>
+                <h1 className="text-3xl font-bold">Navbar</h1>
             </Link>
-            <ul>
+            <ul className=" m-5 ">
                 <li>
                     <Link href="http:/">Home</Link>
                 </li>
