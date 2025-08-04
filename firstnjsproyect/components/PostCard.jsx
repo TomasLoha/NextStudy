@@ -1,20 +1,18 @@
 "use client";
-
+import Link from "next/link";
 //RCC REACT CLIENT COMPONENT
 function PostCard({ post }) {
     return (
         <div>
-            <h3>
-                {post.id}. {post.title}
-            </h3>
+            <Link href={`/post/${post.id}`}>
+                <h3>
+                    {post.id}. {post.title}
+                </h3>
+            </Link>
             <p>{post.body}</p>
-            <button
-                onClick={() => {
-                    alert("boton funcionando");
-                }}
-            >
-                click
-            </button>
+            <Link href={`/post/${post.id}`}>
+                <button>click</button>
+            </Link>
         </div>
     );
 }

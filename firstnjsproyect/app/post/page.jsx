@@ -1,6 +1,6 @@
 import React from "react";
 import PostCard from "@/components/PostCard";
-import { resolve } from "styled-jsx/css";
+import "./post.css";
 //react{usestate, useeffect, render}
 
 async function loandPosts() {
@@ -8,7 +8,7 @@ async function loandPosts() {
     const data = await response.json();
 
     //en caso de demora de datos:
-    await new Promise((resolve) => setTimeout(resolve, 9000));
+    // await new Promise((resolve) => setTimeout(resolve, 1000));
     return data;
 }
 //renderiza a servidor
@@ -17,7 +17,7 @@ async function PostPage() {
     const post = await loandPosts();
     // console.log(post);
     return (
-        <div>
+        <div className="grid">
             {post.map((post) => (
                 <PostCard post={post} key={post.id} />
             ))}

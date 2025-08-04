@@ -1,9 +1,11 @@
 import Link from "next/link";
-
+import "./navbar.css";
 function Navbar() {
     return (
-        <nav>
-            <h1>NavBar</h1>
+        <nav className="navbar">
+            <Link href="/">
+                <h1>Navbar</h1>
+            </Link>
             <ul>
                 <li>
                     <Link href="http:/">Home</Link>
